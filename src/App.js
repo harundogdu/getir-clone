@@ -11,7 +11,7 @@ import Footer from "components/Footer";
 /* function */
 function App() {
   return (
-    <div className="w-full h-screen bg-mainBg ">
+    <div className="h-screen bg-mainBg ">
       <Header />
       <HeroSection />
       <Categories />

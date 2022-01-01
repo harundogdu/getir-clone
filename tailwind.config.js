@@ -7,6 +7,7 @@ module.exports = {
         mainBg: "#fafafa",
         text: "#dbdbff",
         activeColor: "#5d3ebc",
+        brandYellow: "#ffd300",
       },
     },
   },
