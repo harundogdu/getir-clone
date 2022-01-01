@@ -3,7 +3,7 @@ import { BiGlobe } from "react-icons/bi";
 import { FaUserAlt, FaUserPlus } from "react-icons/fa";
 const Header = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary px-48">
       <div className="container mx-auto px-4 py-2 h-11 flex items-center justify-between text-text ">
         {/* left menu start */}
         <nav>
@@ -11,7 +11,7 @@ const Header = () => {
             <li>
               <a
                 href="!#"
-                className="bg-gray-100 bg-opacity-10 rounded px-2 h-11 flex items-center"
+                className="bg-gray-100 bg-opacity-10 rounded-2xl rounded-b-none px-2 h-16 flex items-center "
               >
                 <img
                   data-testid="main-image"
