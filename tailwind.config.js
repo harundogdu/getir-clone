@@ -8,6 +8,7 @@ module.exports = {
         text: "#dbdbff",
         activeColor: "#5d3ebc",
         brandYellow: "#ffd300",
+        light: "#f3f0fe",
       },
     },
   },

@@ -62,14 +62,14 @@ const HeroSection = () => {
           />
         </div>
       </Slider>
-      <div className="container flex items-center justify-between absolute  top-0 left-1/2 -translate-x-1/2 h-full z-20 px-28">
+      <div className="container flex items-center justify-between absolute top-0 left-1/2 -translate-x-1/2 h-full z-20 px-28">
         <div className="space-y-8">
           <img
             data-testid="main-image"
             src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"
             alt="Logo"
             shape="NORMAL"
-            class="style__Image-sc-__sc-1h9bp23-0 iceviX"
+            className="style__Image-sc-__sc-1h9bp23-0 iceviX"
           />
           <h5 className="text-4xl text-white font-semibold">
             Dakikalar içinde <br />

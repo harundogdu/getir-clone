@@ -28,7 +28,7 @@ const Header = () => {
                   src="https://getir.com/_next/static/images/getir-food-logo-2dcee4ade7ab424ae39e8602503ab31f.svg"
                   alt="GetirYemek"
                   shape="NORMAL"
-                  class="style__Image-sc-__sc-1h9bp23-0 iceviX"
+                  className="style__Image-sc-__sc-1h9bp23-0 iceviX"
                 />
               </a>
             </li>
@@ -39,7 +39,7 @@ const Header = () => {
                   src="https://getir.com/_next/static/images/getir-more-logo-43b84c4381edcbda2c1d686d826034de.svg"
                   alt="GetirYemek"
                   shape="NORMAL"
-                  class="style__Image-sc-__sc-1h9bp23-0 iceviX"
+                  className="style__Image-sc-__sc-1h9bp23-0 iceviX"
                 />
               </a>
             </li>
