@@ -8,17 +8,20 @@
 @layer base {
     html {
         font-family: 'Open Sans', sans-serif;
+        @apply antialiased;
     }
 }
 
 @layer components {
     #flags {
-        @apply !pb-0
+        @apply  !pb-0
     }
-    #flags  > button {
+
+    #flags>button {
         @apply border-none
     }
-    #flags  > button::after {
-        @apply border-solid border-activeColor border-x-transparent 
+
+    #flags>button::after {
+        @apply border-solid border-activeColor border-x-transparent
     }
 }
