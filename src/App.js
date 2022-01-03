@@ -8,14 +8,23 @@ import MobileApp from "components/MobileApp";
 import Cards from "components/Cards";
 import Footer from "components/Footer";
 
+import { useWindowWidth } from "@react-hook/window-size";
+
 /* function */
 function App() {
+  const windowWidthSize = useWindowWidth();
   return (
     <div className="h-screen bg-white">
       <Header />
-      <HeroSection />
+      {windowWidthSize >= 768 ? (
+        <HeroSection />
+      ) : (
+        <>
+          <Campaigns /> <HeroSection />
+        </>
+      )}
       <Categories />
-      <Campaigns />
+      {windowWidthSize >= 768 && <Campaigns />}
       <Favourites />
       <MobileApp />
       <Cards />

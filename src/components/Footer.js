@@ -44,12 +44,12 @@ const Footer = () => {
   ];
 
   return (
-    <div className="mx-auto container px-28 py-5">
-      <div className="flex grid-cols-5 items-center justify-between">
+    <div className="mx-auto container mt-10 lg:mt-0 lg:px-28 lg:py-5 px-4">
+      <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-y-10 lg:gap-y-0 items-center justify-between gap-x-7 tracking-tight">
         {/*  */}
-        <div className="h-56">
+        <div className="h-56 col-span-2">
           <h5 className="text-activeColor text-lg">Getir'i İndirin!</h5>
-          <div className="flex flex-col gap-y-2 my-4">
+          <div className="flex flex-col gap-y-2 my-4 w-36">
             <img src={AppStoreImage} alt="AppStoreImage" />
             <img src={GooglePlayImage} alt="GooglePlayImage" />
             <img src={AppGaleryImage} alt="AppGaleryImage" />
@@ -62,7 +62,7 @@ const Footer = () => {
             ))
           }
         {/*  */}
-        <div className="h-56">
+        <div className="hidden md:flex h-56  justify-end items-start flex-grow col-span-1">
           <img
             src="https://getir.com/_next/static/images/etbis-33c159729adc8b4e2b946310f038d2f4.png"
             alt="QR"
@@ -71,15 +71,15 @@ const Footer = () => {
         </div>
         {/*  */}
       </div>
-      <hr className="my-4" />
-      <div className="flex items-center justify-between py-4">
+      <hr className="my-2 lg:my-4" />
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:py-4 p-2">
         <div className="flex gap-x-3 text-xs">
           <span>© 2022 Getir</span>
           <a href="!#" className="text-activeColor">
             Bilgi Toplumu Hizmetleri
           </a>
         </div>
-        <div className="flex items-center justify-center gap-x-3">
+        <div className="flex items-center justify-end lg:justify-center gap-x-3">
           <BsFacebook
             size={38}
             className="cursor-pointer hover:bg-light p-2 text-gray-500 hover:text-activeColor transition-all rounded-lg"

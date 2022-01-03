@@ -7,8 +7,10 @@ import heroTwo from "images/hero-2.jpg";
 import heroThree from "images/hero-3.jpg";
 import heroFour from "images/hero-4.jpg";
 import ReactFlagsSelect from "react-flags-select";
+import { useWindowWidth } from "@react-hook/window-size";
 /* function */
 const HeroSection = () => {
+  const windowWidthSize = useWindowWidth();
   const [selected, setSelected] = useState("TR");
   const countries = {
     TR: "+90",
@@ -31,39 +33,45 @@ const HeroSection = () => {
     arrows: false,
   };
   return (
-    <div className="h-[500px] w-full relative before:bg-gradient-to-r before:from-activeColor before:to-transparent before:absolute before:inset-0 before:z-10">
-      <Slider {...settings}>
-        <div>
-          <img
-            className="w-full !h-[500px] object-cover"
-            src={heroOne}
-            alt="hero-1"
-          />
-        </div>
-        <div>
-          <img
-            className="w-full !h-[500px] object-cover"
-            src={heroTwo}
-            alt="hero-1"
-          />
-        </div>
-        <div>
-          <img
-            className="w-full !h-[500px] object-cover"
-            src={heroThree}
-            alt="hero-1"
-          />
-        </div>
-        <div>
-          <img
-            className="w-full !h-[500px] object-cover"
-            src={heroFour}
-            alt="hero-1"
-          />
-        </div>
-      </Slider>
-      <div className="container flex items-center justify-between absolute top-0 left-1/2 -translate-x-1/2 h-full z-20 px-28">
-        <div className="space-y-8">
+    <div className="h-52 md:h-[500px] w-full relative md:before:bg-gradient-to-r md:before:from-activeColor md:before:to-transparent before:absolute md:before:inset-0 md:before:z-10">
+      {windowWidthSize >= 768 && (
+        <Slider {...settings}>
+          <div>
+            <img
+              className="w-full !h-[500px] object-cover"
+              src={heroOne}
+              alt="hero-1"
+            />
+          </div>
+          <div>
+            <img
+              className="w-full !h-[500px] object-cover"
+              src={heroTwo}
+              alt="hero-1"
+            />
+          </div>
+          <div>
+            <img
+              className="w-full !h-[500px] object-cover"
+              src={heroThree}
+              alt="hero-1"
+            />
+          </div>
+          <div>
+            <img
+              className="w-full !h-[500px] object-cover"
+              src={heroFour}
+              alt="hero-1"
+            />
+          </div>
+        </Slider>
+      )}
+
+      <div
+        className="container flex items-center justify-between absolute top-0 left-1/2 -translate-x-1/2 h-full z-20 
+       md:px-5 lg:px-24 2xl:px-48"
+      >
+        <div className="hidden md:block space-y-8">
           <img
             data-testid="main-image"
             src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"
@@ -76,7 +84,7 @@ const HeroSection = () => {
             kapınızda.
           </h5>
         </div>
-        <div className="bg-mainBg w-1/3 px-8 py-6 rounded-lg space-y-4">
+        <div className="bg-mainBg w-full md:w-1/2 xl:w-1/3 px-8 py-6 rounded-lg space-y-4">
           <h6 className="text-activeColor font-semibold text-lg text-center">
             Giriş yap veya kayıt ol
           </h6>
@@ -93,7 +101,8 @@ const HeroSection = () => {
             <label className="flex-1 relative bg-white group">
               <input
                 type="text"
-                className="border rounded border-gray-300 w-full h-12 px-4 outline-none group-hover:border-activeColor focus-within:border-activeColor transition-all peer text-sm pt-2 block" required
+                className="border rounded border-gray-300 w-full h-12 px-4 outline-none group-hover:border-activeColor focus-within:border-activeColor transition-all peer text-sm pt-2 block"
+                required
               />
               <span className="absolute top-3 left-4 text-gray-400 text-md group-hover:border-activeColor transition-all  peer-focus:top-1 peer-focus:text-xs peer-focus:text-activeColor peer-valid:top-1 peer-valid:text-xs">
                 Telefon Numarası
