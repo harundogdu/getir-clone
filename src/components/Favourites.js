@@ -14,7 +14,7 @@ const Favourites = () => {
     <div className="bg-mainBg">
       <div className="mx-auto container px-28 py-5">
         <Title>Favoriler</Title>
-        <div className="bg-white flex p-3 grid-cols-4 divide-x divide-y divide-gray-50 flex-wrap items-center">
+        <div className="bg-white flex p-3 grid-cols-4 divide-x divide-y divide-gray-50 flex-wrap items-center mt-4">
           {
             favourites.map((favourite, index) => (
               <div key={favourite.id} className="w-44 h-52 flex flex-col flex-grow items-center justify-center p-2 cursor-pointer relative">

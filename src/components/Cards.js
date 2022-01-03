@@ -7,7 +7,7 @@ const Cards = () => {
     setBox(boxData);
   }, []);
   return (
-    <div className="bg-mainBg">
+    <div className="bg-mainBg pb-20">
       <div className="mx-auto container px-28 py-5">
         <div className="w-fit mx-auto flex items-center justify-center flex-grow gap-x-4 grid-cols-3">
           {box.map((item, index) => (
