@@ -1,4 +1,4 @@
-# React.js Örnek Projeler
+# React.js + Tailwind CSS ile Getir
 
 Bu proje [Create React App](https://github.com/facebook/create-react-app) ve [Tailwind CSS](https:/tailwindcss.com) kullanılarak geliştirdiğim [Getir](https:/getir.com) internet sitesi clone uygulamamdır.
 
